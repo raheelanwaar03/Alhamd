@@ -198,12 +198,13 @@
         <div class="container">
             <div class="box">
                 <h1>Register</h1>
-                <form action="">
-                    <input type="text" placeholder="Email address *" />
-                    <input type="text" placeholder="Username *" />
-                    <input type="text" placeholder="Password *" />
-                    <input type="text" placeholder="Confirm Password *" />
-                    <button class="flexCenter gap-1">
+                <form action="{{ route('register') }}" method="POST">
+                    @csrf
+                    <input type="text" name="email" placeholder="Email address *" />
+                    <input type="text" name="name" placeholder="Username *" />
+                    <input type="password" name="password" placeholder="Password *" />
+                    <input type="password" name="password_confirmation" placeholder="Confirm Password *" />
+                    <button type="submit" class="flexCenter gap-1">
                         Register <i class="fa-solid fa-arrow-right"></i>
                     </button>
                 </form>
