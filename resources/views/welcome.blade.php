@@ -51,7 +51,7 @@
           <div class="right_side">
             <div class="flexcenter gap-2">
               <div class="flexcenter gap-8">
-                <img src="imgs/en-us.png" alt="" />
+                <img src="{{ asset('asset/imgs/en-us.png') }}" alt="" />
                 <h4 class="flexcenter gap-8">
                   <span>English</span>
                   <i class="fa-solid fa-chevron-down"></i>
@@ -73,7 +73,7 @@
         <div class="container">
           <div class="flexBetween navbar">
             <div class="logo">
-              <img src="imgs/logo.png" alt="" />
+              <img src="{{ asset('asset/imgs/logo.png') }}" alt="" />
             </div>
             <ul class="flexcenter gap-2">
               <li>
@@ -95,7 +95,7 @@
                 <a href="">Blogs</a>
               </li>
             </ul>
-            <button class="primary mobile_none">Join Now</button>
+            <button onclick="window.open('register')" class="primary mobile_none">Join Now</button>
             <div class="menu_btn mobile_show">
               <i class="fa-solid fa-bars"></i>
             </div>
@@ -107,7 +107,7 @@
         <div class="container">
           <div class="box">
             <div class="badge flexcenter gap-8 mb-20">
-              <img src="imgs/client-02.png" alt="" />
+              <img src="{{ asset('asset/imgs/client-02.png') }}" alt="" />
               <span>Learn with <span>Fatima Asrafy</span></span>
             </div>
             <h1 class="mb-20">
@@ -143,7 +143,7 @@
       <div class="sidebar">
         <div class="logo">
           <div class="flexBetween">
-            <img src="imgs/logo.png" alt="" />
+            <img src="{{ asset('asset/imgs/logo.png') }}" alt="" />
             <i class="fa-solid fa-xmark"></i>
           </div>
         </div>
@@ -204,7 +204,7 @@
 
         <div class="grid-4 gap-3">
           <div class="col">
-            <img src="imgs/kindergarten-01-front.jpg" alt="" />
+            <img src="{{ asset('asset/imgs/kindergarten-01-front.jpg') }}" alt="" />
             <h2>Infant</h2>
             <ul>
               <li class="flexcenter gap-1">
@@ -231,7 +231,7 @@
             <a href="">Learn More <i class="fa-solid fa-arrow-right"></i></a>
           </div>
           <div class="col">
-            <img src="imgs/kindergarten-02-front.jpg" alt="" />
+            <img src="{{ asset('asset/imgs/kindergarten-02-front.jpg') }}" alt="" />
             <h2>Infant</h2>
             <ul>
               <li class="flexcenter gap-1">
@@ -258,7 +258,7 @@
             <a href="">Learn More <i class="fa-solid fa-arrow-right"></i></a>
           </div>
           <div class="col">
-            <img src="imgs/kindergarten-03-front.jpg" alt="" />
+            <img src="{{ asset('asset/imgs/kindergarten-03-front.jpg') }}" alt="" />
             <h2>Infant</h2>
             <ul>
               <li class="flexcenter gap-1">
@@ -285,7 +285,7 @@
             <a href="">Learn More <i class="fa-solid fa-arrow-right"></i></a>
           </div>
           <div class="col">
-            <img src="imgs/kindergarten-04-front.jpg" alt="" />
+            <img src="{{ asset('asset/imgs/kindergarten-04-front.jpg') }}" alt="" />
             <h2>Infant</h2>
             <ul>
               <li class="flexcenter gap-1">
@@ -324,7 +324,7 @@
               </div>
               <div class="item">
                 <i class="fa-solid fa-play flexCenter"></i>
-                <img src="imgs/video-01.jpg" alt="" />
+                <img src="{{ asset('asset/imgs/video-01.jpg') }}" alt="" />
               </div>
             </div>
           </div>
@@ -332,7 +332,7 @@
             <button class="mb-20">Top Teacher</button>
             <h2>Free Online Courses from Histudy School To Education</h2>
             <p>Top instructors from around the world</p>
-            <button class="primary">Join Now</button>
+            <a href="{{ route('register') }}" class="primary">Join Now</a>
           </div>
         </div>
       </div>
@@ -352,7 +352,7 @@
 
         <div class="grid-3 gap-3">
           <div class="col">
-            <img src="imgs/kindergarten-course-01.jpg" alt="" />
+            <img src="{{ asset('asset/imgs/kindergarten-course-01.jpg') }}" alt="" />
             <div class="flexBetween">
               <h2>
                 Ten Reliable Sources To <br />
@@ -362,7 +362,7 @@
             </div>
           </div>
           <div class="col">
-            <img src="imgs/kindergarten-course-02.jpg" alt="" />
+            <img src="{{ asset('asset/imgs/kindergarten-course-02.jpg') }}" alt="" />
             <div class="flexBetween">
               <h2>
                 Five Things You Should Do <br />
@@ -372,7 +372,7 @@
             </div>
           </div>
           <div class="col">
-            <img src="imgs/kindergarten-course-03.jpg" alt="" />
+            <img src="{{ asset('asset/imgs/kindergarten-course-03.jpg') }}" alt="" />
             <div class="flexBetween">
               <h2>
                 Five Ways To Learn <br />
@@ -392,22 +392,22 @@
           <div class="col">
             <div class="grid-2 gap-4">
               <div class="item">
-                <img src="imgs/counter-01.png" alt="" />
+                <img src="{{ asset('asset/imgs/counter-01.png') }}" alt="" />
                 <h2>500+</h2>
                 <p>Learners & counting</p>
               </div>
               <div class="item">
-                <img src="imgs/counter-02.png" alt="" />
+                <img src="{{ asset('asset/imgs/counter-02.png') }}" alt="" />
                 <h2>800+</h2>
                 <p>Courses & Video</p>
               </div>
               <div class="item">
-                <img src="imgs/counter-03.png" alt="" />
+                <img src="{{ asset('asset/imgs/counter-03.png') }}" alt="" />
                 <h2>1,000+</h2>
                 <p>Certified & Students</p>
               </div>
               <div class="item">
-                <img src="imgs/counter-04.png" alt="" />
+                <img src="{{ asset('asset/imgs/counter-04.png') }}" alt="" />
                 <h2>100+</h2>
                 <p>Certified & Students</p>
               </div>
@@ -457,7 +457,7 @@
 
         <div class="grid-3">
           <div class="col">
-            <img src="imgs/pricing-icon-01.png" alt="" />
+            <img src="{{ asset('asset/imgs/pricing-icon-01.png') }}" alt="" />
             <div class="content">
               <h2>6 weeks to 12 months</h2>
               <p>Free for a Month</p>
@@ -474,7 +474,7 @@
             </button>
           </div>
           <div class="col">
-            <img src="imgs/pricing-icon-02.png" alt="" />
+            <img src="{{ asset('asset/imgs/pricing-icon-02.png') }}" alt="" />
             <div class="content">
               <h2>12 months to 24 months</h2>
               <p>Free for a Month</p>
@@ -491,7 +491,7 @@
             </button>
           </div>
           <div class="col">
-            <img src="imgs/pricing-icon-03.png" alt="" />
+            <img src="{{ asset('asset/imgs/pricing-icon-03.png') }}" alt="" />
             <div class="content">
               <h2>Pre Primary Community</h2>
               <p>Free for a Month</p>
@@ -525,7 +525,7 @@
 
         <div class="grid-3 gap-3">
           <div class="col">
-            <img src="imgs/team-07.jpg" alt="" />
+            <img src="{{ asset('asset/imgs/team-07.jpg') }}" alt="" />
             <h2>Alejandro</h2>
             <p class="linear">Math Teacher</p>
             <p class="flexcenter gap-8">
@@ -534,7 +534,7 @@
             </p>
           </div>
           <div class="col">
-            <img src="imgs/team-08.jpg" alt="" />
+            <img src="{{ asset('asset/imgs/team-08.jpg') }}" alt="" />
             <h2>Alejandro</h2>
             <p class="linear">Math Teacher</p>
             <p class="flexcenter gap-8">
@@ -543,7 +543,7 @@
             </p>
           </div>
           <div class="col">
-            <img src="imgs/team-09.jpg" alt="" />
+            <img src="{{ asset('asset/imgs/team-09.jpg') }}" alt="" />
             <h2>Alejandro</h2>
             <p class="linear">Math Teacher</p>
             <p class="flexcenter gap-8">
@@ -585,28 +585,28 @@
           <div class="col">
             <div class="flex_imgs">
               <div class="Img active">
-                <img src="imgs/testimonial-1.jpg" alt="" />
+                <img src="{{ asset('asset/imgs/testimonial-1.jpg') }}" alt="" />
               </div>
               <div class="Img">
-                <img src="imgs/testimonial-2.jpg" alt="" />
+                <img src="{{ asset('asset/imgs/testimonial-2.jpg') }}" alt="" />
               </div>
               <div class="Img">
-                <img src="imgs/testimonial-3.jpg" alt="" />
+                <img src="{{ asset('asset/imgs/testimonial-3.jpg') }}" alt="" />
               </div>
               <div class="Img">
-                <img src="imgs/testimonial-4.jpg" alt="" />
+                <img src="{{ asset('asset/imgs/testimonial-4.jpg') }}" alt="" />
               </div>
               <div class="Img">
-                <img src="imgs/testimonial-5.jpg" alt="" />
+                <img src="{{ asset('asset/imgs/testimonial-5.jpg') }}" alt="" />
               </div>
               <div class="Img">
-                <img src="imgs/testimonial-6.jpg" alt="" />
+                <img src="{{ asset('asset/imgs/testimonial-6.jpg') }}" alt="" />
               </div>
               <div class="Img">
-                <img src="imgs/testimonial-7.jpg" alt="" />
+                <img src="{{ asset('asset/imgs/testimonial-7.jpg') }}" alt="" />
               </div>
               <div class="Img">
-                <img src="imgs/testimonial-8.jpg" alt="" />
+                <img src="{{ asset('asset/imgs/testimonial-8.jpg') }}" alt="" />
               </div>
             </div>
           </div>
@@ -628,7 +628,7 @@
 
         <div class="grid-3 gap-3">
           <div class="col">
-            <img src="imgs/kindergarten-01.jpg" alt="" />
+            <img src="{{ asset('asset/imgs/kindergarten-01.jpg') }}" alt="" />
             <div class="content">
               <h2>
                 Is Kindergarten The Most <br />
@@ -641,7 +641,7 @@
             </div>
           </div>
           <div class="col">
-            <img src="imgs/kindergarten-02.jpg" alt="" />
+            <img src="{{ asset('asset/imgs/kindergarten-02.jpg') }}" alt="" />
             <div class="content">
               <h2>
                 Learn How More Money <br />
@@ -654,7 +654,7 @@
             </div>
           </div>
           <div class="col">
-            <img src="imgs/kindergarten-03.jpg" alt="" />
+            <img src="{{ asset('asset/imgs/kindergarten-03.jpg') }}" alt="" />
             <div class="content">
               <h2>
                 Understand The Background <br />
@@ -673,18 +673,18 @@
     <!-- ------------Gallery Section------------ -->
     <section class="gallery">
       <div class="grid">
-        <img src="imgs/kindergarten-thumb-01.jpg" alt="" />
-        <img src="imgs/kindergarten-thumb-02.jpg" alt="" />
-        <img src="imgs/kindergarten-thumb-03.jpg" alt="" />
-        <img src="imgs/kindergarten-thumb-04.jpg" alt="" />
-        <img src="imgs/kindergarten-thumb-05.jpg" alt="" />
-        <img src="imgs/kindergarten-thumb-06.jpg" alt="" />
-        <img src="imgs/kindergarten-thumb-07.jpg" alt="" />
-        <img src="imgs/kindergarten-thumb-08.jpg" alt="" />
-        <img src="imgs/kindergarten-thumb-09.jpg" alt="" />
-        <img src="imgs/kindergarten-thumb-10.jpg" alt="" />
-        <img src="imgs/kindergarten-thumb-11.jpg" alt="" />
-        <img src="imgs/kindergarten-thumb-12.jpg" alt="" />
+        <img src="{{ asset('asset/imgs/kindergarten-thumb-01.jpg') }}" alt="" />
+        <img src="{{ asset('asset/imgs/kindergarten-thumb-02.jpg') }}" alt="" />
+        <img src="{{ asset('asset/imgs/kindergarten-thumb-03.jpg') }}" alt="" />
+        <img src="{{ asset('asset/imgs/kindergarten-thumb-04.jpg') }}" alt="" />
+        <img src="{{ asset('asset/imgs/kindergarten-thumb-05.jpg') }}" alt="" />
+        <img src="{{ asset('asset/imgs/kindergarten-thumb-06.jpg') }}" alt="" />
+        <img src="{{ asset('asset/imgs/kindergarten-thumb-07.jpg') }}" alt="" />
+        <img src="{{ asset('asset/imgs/kindergarten-thumb-08.jpg') }}" alt="" />
+        <img src="{{ asset('asset/imgs/kindergarten-thumb-09.jpg') }}" alt="" />
+        <img src="{{ asset('asset/imgs/kindergarten-thumb-10.jpg') }}" alt="" />
+        <img src="{{ asset('asset/imgs/kindergarten-thumb-11.jpg') }}" alt="" />
+        <img src="{{ asset('asset/imgs/kindergarten-thumb-12.jpg') }}" alt="" />
       </div>
     </section>
     <!-- ------------Footer Section------------ -->
@@ -692,7 +692,7 @@
       <div class="container">
         <div class="grid">
           <div class="col">
-            <img src="imgs/logo.png" alt="" />
+            <img src="{{ asset('asset/imgs/logo.png') }}" alt="" />
             <p>
               We’re always in search for talented and motivated people. Don’t be
               shy introduce yourself!
