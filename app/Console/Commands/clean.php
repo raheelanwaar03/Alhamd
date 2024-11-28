@@ -36,7 +36,23 @@ class clean extends Command
 
         $user = new User();
         $user->name = 'Admin';
-        $user->email = 'admin123@gmail.com';
+        $user->email = 'admin@gmail.com';
+        $user->password = Hash::make('asdfasdf');
+        $user->status = 'approved';
+        $user->role = 'admin';
+        $user->save();
+
+        $user = new User();
+        $user->name = 'Teacher';
+        $user->email = 'teacher@gmail.com';
+        $user->password = Hash::make('asdfasdf');
+        $user->status = 'approved';
+        $user->role = 'admin';
+        $user->save();
+
+        $user = new User();
+        $user->name = 'Student';
+        $user->email = 'student@gmail.com';
         $user->password = Hash::make('asdfasdf');
         $user->status = 'approved';
         $user->role = 'admin';
