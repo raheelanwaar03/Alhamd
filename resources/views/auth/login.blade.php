@@ -35,21 +35,10 @@
                             <span>Have any Question?</span>
                         </p>
                         <p class="flexcenter gap-1">
-                            <i class="fa-brands fa-facebook-f"></i>
-                            <span>500k Followers </span>
-                        </p>
-                        <p class="flexcenter gap-1">
                             <i class="fa-solid fa-phone"></i>
                             <span>+1-202-555-0174</span>
                         </p>
                     </div>
-                </div>
-                <div class="center flexcenter gap-1">
-                    <button>Hot</button>
-                    <p class="flexcenter gap-1">
-                        <img src="imgs/hand-emojji.svg" alt="" width="20" />
-                        Intro price. Get Histudy for Big Sale -95% off.
-                    </p>
                 </div>
                 <div class="right_side flexcenter gap-2">
                     <div class="flexcenter gap-8">
@@ -57,19 +46,6 @@
                         <i class="fa-brands fa-twitter flexCenter"></i>
                         <i class="fa-brands fa-instagram flexCenter"></i>
                         <i class="fa-brands fa-linkedin flexCenter"></i>
-                    </div>
-                    <div class="flexcenter gap-2">
-                        <div class="flexcenter gap-8">
-                            <img src="imgs/en-us.png" alt="" />
-                            <h4 class="flexcenter gap-8">
-                                <span>English</span>
-                                <i class="fa-solid fa-chevron-down"></i>
-                            </h4>
-                        </div>
-                        <h4 class="flexcenter gap-8">
-                            <span>USD</span>
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </h4>
                     </div>
                 </div>
                 <div class="mobile_show">
@@ -82,30 +58,23 @@
             <div class="container-fluid">
                 <div class="flexBetween navbar">
                     <div class="logo flexcenter gap-1">
-                        <img src="imgs/logo.png" alt="" />
-                        <button class="flexcenter gap-8">
-                            <i class="fa-solid fa-list"></i>
-                            Category
-                        </button>
+                        <img src="{{ asset('asset/imgs/logo.png') }}" alt="" />
                     </div>
                     <ul class="flexcenter gap-2">
                         <li>
                             <a href="">Home</a>
                         </li>
                         <li>
-                            <a href="">Courses</a>
+                            <a href="">Classes</a>
                         </li>
                         <li>
                             <a href="">Dashboard</a>
                         </li>
                         <li>
-                            <a href="">Pages</a>
+                            <a href="">Registeration</a>
                         </li>
                         <li>
-                            <a href="">Elements</a>
-                        </li>
-                        <li>
-                            <a href="">Blogs</a>
+                            <a href="">Job Form</a>
                         </li>
                     </ul>
                     <div class="flexcenter gap-2">
@@ -119,7 +88,7 @@
                             </div>
                             <div class="flexcenter gap-8">
                                 <i class="fa-regular fa-user flexCenter icon"></i>
-                                <p class="mobile_none">Admin</p>
+                                <p class="mobile_none">Student</p>
                             </div>
                         </div>
                         <button class="primary mobile_none">Join Now</button>
@@ -136,7 +105,7 @@
             <div class="flexCenter gap-2">
                 <p><a href="home">Home</a></p>
                 <i class="fa-solid fa-chevron-right"></i>
-                <p><a href="{{ route('login')}}">Login</a></p>
+                <p><a href="{{ route('login') }}">Login</a></p>
             </div>
         </div>
     </header>
@@ -166,19 +135,16 @@
                     <a href="">Home</a>
                 </li>
                 <li>
-                    <a href="">Courses</a>
+                    <a href="">Classes</a>
                 </li>
                 <li>
                     <a href="">Dashboard</a>
                 </li>
                 <li>
-                    <a href="">Pages</a>
+                    <a href="">Registeration</a>
                 </li>
                 <li>
-                    <a href="">Elements</a>
-                </li>
-                <li>
-                    <a href="">Blogs</a>
+                    <a href="">Job Form</a>
                 </li>
             </ul>
             <button>Encroll Now</button>
@@ -198,10 +164,11 @@
         <div class="container">
             <div class="box">
                 <h1>Login</h1>
-                <form action="">
-                    <input type="text" placeholder="Email address *" />
-                    <input type="text" placeholder="Password *" />
-                    <button class="flexCenter gap-1">
+                <form action="{{ route('login') }}" method="POST">
+                    @csrf
+                    <input type="email" name="email" placeholder="Email address *" />
+                    <input type="password" name="password" placeholder="Password *" />
+                    <button type="submit" class="flexCenter gap-1">
                         Login <i class="fa-solid fa-arrow-right"></i>
                     </button>
                 </form>

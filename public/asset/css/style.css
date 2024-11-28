@@ -122,7 +122,7 @@ header nav .navbar ul li a {
 
 header .hero_sec {
   padding: 140px 0;
-  background: url("imgs/bg-image-13.jpg");
+  background: url('asset/imgs/bg-image-13.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -925,7 +925,7 @@ header .profile_box {
   margin-bottom: 30px;
 }
 header .dashboard_box .box {
-  background: url("imgs/bg-image-22.jpg") !important;
+  background: url("asset/imgs/bg-image-22.jpg") !important;
   z-index: 1 !important;
   border-radius: 10px !important;
   background-position: center !important;
@@ -933,7 +933,7 @@ header .dashboard_box .box {
   position: relative !important;
 }
 header .profile_box .box {
-  background: url("imgs/bg-image-23.jpg");
+  background: url("asset/imgs/bg-image-23.jpg");
   border-radius: 10px;
   background-position: center;
   background-size: cover;

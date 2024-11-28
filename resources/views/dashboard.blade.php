@@ -32,21 +32,10 @@
                             <span>Have any Question?</span>
                         </p>
                         <p class="flexcenter gap-1">
-                            <i class="fa-brands fa-facebook-f"></i>
-                            <span>500k Followers </span>
-                        </p>
-                        <p class="flexcenter gap-1">
                             <i class="fa-solid fa-phone"></i>
                             <span>+1-202-555-0174</span>
                         </p>
                     </div>
-                </div>
-                <div class="center flexcenter gap-1">
-                    <button>Hot</button>
-                    <p class="flexcenter gap-1">
-                        <img src="{{ asset('asset/imgs/hand-emojji.svg') }}" alt="" width="20" />
-                        Intro price. Get Histudy for Big Sale -95% off.
-                    </p>
                 </div>
                 <div class="right_side flexcenter gap-2">
                     <div class="flexcenter gap-8">
@@ -54,19 +43,6 @@
                         <i class="fa-brands fa-twitter flexCenter"></i>
                         <i class="fa-brands fa-instagram flexCenter"></i>
                         <i class="fa-brands fa-linkedin flexCenter"></i>
-                    </div>
-                    <div class="flexcenter gap-2">
-                        <div class="flexcenter gap-8">
-                            <img src="{{ asset('asset/imgs/en-us.png') }}" alt="" />
-                            <h4 class="flexcenter gap-8">
-                                <span>English</span>
-                                <i class="fa-solid fa-chevron-down"></i>
-                            </h4>
-                        </div>
-                        <h4 class="flexcenter gap-8">
-                            <span>USD</span>
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </h4>
                     </div>
                 </div>
                 <div class="mobile_show">
@@ -80,43 +56,26 @@
                 <div class="flexBetween navbar">
                     <div class="logo flexcenter gap-1">
                         <img src="{{ asset('asset/imgs/logo.png') }}" alt="" />
-                        <button class="flexcenter gap-8">
-                            <i class="fa-solid fa-list"></i>
-                            Category
-                        </button>
                     </div>
                     <ul class="flexcenter gap-2">
                         <li>
                             <a href="">Home</a>
                         </li>
                         <li>
-                            <a href="">Courses</a>
+                            <a href="">Classes</a>
                         </li>
                         <li>
-                            <a href="">Dashboard</a>
+                            <a href="">Registeration</a>
                         </li>
                         <li>
-                            <a href="">Pages</a>
-                        </li>
-                        <li>
-                            <a href="">Elements</a>
-                        </li>
-                        <li>
-                            <a href="">Blogs</a>
+                            <a href="">Job Form</a>
                         </li>
                     </ul>
                     <div class="flexcenter gap-2">
                         <div class="flexcenter gap-2">
-                            <div class="flexcenter gap-1">
-                                <i class="fa-solid fa-search flexCenter icon"></i>
-                                <div class="cart">
-                                    <i class="fa-solid fa-shopping-bag flexCenter icon"></i>
-                                    <span class="flexCenter">4</span>
-                                </div>
-                            </div>
                             <div class="flexcenter gap-8">
                                 <i class="fa-regular fa-user flexCenter icon"></i>
-                                <p class="mobile_none">Admin</p>
+                                <p class="mobile_none">{{ auth()->user()->name }}</p>
                             </div>
                         </div>
                         <button class="primary mobile_none">Join Now</button>
@@ -282,7 +241,14 @@
                             </li>
                             <li class="flexcenter gap-8">
                                 <i class="fa-solid fa-right-from-bracket"></i>
-                                <p>Logout</p>
+                                <a href="{{ route('logout') }}"
+                                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                    <img src="{{ asset('assets/images/icons/icon-30.svg') }}" alt="">Logout
+                                </a>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                    style="display: none;">
+                                    @csrf
+                                </form>
                             </li>
                         </ul>
                     </div>
@@ -434,25 +400,10 @@
                     </button>
                 </div>
                 <div class="col">
-                    <h3>Useful Links</h3>
-                    <ul>
-                        <li><a href="">Marketplace</a></li>
-                        <li><a href="">kindergarten</a></li>
-                        <li><a href="">University</a></li>
-                        <li><a href="">Marketplace</a></li>
-                        <li><a href="">GYM Coaching</a></li>
-                        <li><a href="">FAQ</a></li>
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Privacy policy</a></li>
-                    </ul>
-                </div>
-                <div class="col">
                     <h3>Our Company</h3>
                     <ul>
                         <li><a href="">Contact Us</a></li>
                         <li><a href="">Become Teacher</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Instructor</a></li>
                         <li><a href="">Events</a></li>
                         <li><a href="">Course</a></li>
                         <li><a href="">Contact</a></li>
@@ -464,8 +415,7 @@
                     <p>E-mail: admin@example.com</p>
                     <p class="strong">Newsletter</p>
                     <p>
-                        2000+ Our students are subscribe Around the World. Don’t be shy
-                        introduce yourself!
+                        If you have any questions. Don’t be shy! Ask anything you want.
                     </p>
                     <div class="input flexBetween">
                         <input type="text" placeholder="Enter Your Email Here" />
@@ -478,7 +428,7 @@
             <div class="footer_btm">
                 <div class="flexBetween">
                     <p>
-                        Copyright © 2024 <span>Rainbow-Themes.</span> All Rights Reserved
+                        Copyright © 2024 <span>{{ env('APP_NAME') }}.</span> All Rights Reserved
                     </p>
                     <div class="flexcenter gap-2">
                         <a href="">Terms of service</a>
