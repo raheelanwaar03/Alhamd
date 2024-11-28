@@ -75,7 +75,7 @@
                         <div class="flexcenter gap-2">
                             <div class="flexcenter gap-8">
                                 <i class="fa-regular fa-user flexCenter icon"></i>
-                                <p class="mobile_none">{{ auth()->user()->name }}</p>
+                                <p class="mobile_none">{{ auth()->user()->role }}</p>
                             </div>
                         </div>
                         <button class="primary mobile_none">Join Now</button>
@@ -96,7 +96,7 @@
                             <div class="flexcenter gap-2 mobile_col">
                                 <img src="{{ asset('asset/imgs/avatar.jpg') }}" alt="" />
                                 <div class="content">
-                                    <h2>Admin</h2>
+                                    <h2>{{ auth()->user()->name }}</h2>
                                     <div class="flexcenter gap-1">
                                         <div class="flexcenter">
                                             <i class="fa-solid fa-star"></i>

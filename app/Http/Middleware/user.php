@@ -15,7 +15,7 @@ class user
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if (auth()->user()->role == 'user') {
+        if (auth()->user()->role == 'student') {
             return $next($request);
         } elseif (auth()->user()->role == 'admin') {
             return redirect()->route('Admin.Dashboard');
